@@ -1,0 +1,249 @@
+:root{
+    --red-color: #e63946;
+    --white-color: #f1faee;
+    --black-color: #081a03;
+    --gray-color: #3b3f3a;
+    --cyan-color: #a8dadc;
+    --blue-color: #457b9d;
+    --navy-color: #1d3557;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--navy-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+p, a, button{
+    color: var(--black-color);
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+}
+.flex{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.tb-container{
+    border: 0.5rem solid var(--black-color);
+    border-radius: 1.2rem;
+    width: fit-content;
+    max-width: 100%;
+    background-color: var(--white-color);
+}
+
+table{
+    width: 80vw;
+    max-width: 60rem;
+    border-collapse: separate;
+    border-spacing: 0.5rem;
+}
+
+table, th, td{
+    border: 0.15rem solid var(--black-color);
+}
+
+th{
+    padding: 0.5rem;
+    text-align: start;
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+td{
+    padding: 1rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    vertical-align: top;
+    color: var(--black-color);
+}
+img{
+    object-fit: cover;
+}
+
+ 
+.top-row th{
+    background-color: var(--red-color);
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+.title-right{
+    text-align: center;
+}
+
+
+.logo-cell, .badges-cell{
+    border-radius: 1rem;
+    background-color: var(--white-color);
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--red-color);
+    letter-spacing: 0.05rem;
+    text-shadow:
+        -0.12rem -0.12rem 0 var(--navy-color),
+        0.12rem -0.12rem 0 var(--navy-color),
+        -0.12rem 0.12rem 0 var(--navy-color),
+        0.12rem 0.12rem 0 var(--navy-color),
+        0.2rem 0.2rem 0 var(--gray-color);
+}
+.badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.badges img{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 0.15rem solid var(--black-color);
+    background-color: var(--cyan-color);
+    object-fit: contain;
+    padding: 0.2rem;
+}
+
+
+.photo-cell{
+    width: 16rem;
+    text-align: center;
+}
+.trainer-img{
+    width: 100%;
+    max-width: 14rem;
+    aspect-ratio: 3 / 4;
+    border-radius: 1rem;
+    border: 0.25rem solid var(--black-color);
+    display: block;
+    margin: 0 auto;
+    background-color: var(--cyan-color);
+}
+.info-cell{
+    width: auto;
+}
+.info-wrap{
+    display: flex;
+    gap: 0.8rem;
+}
+.info-left{
+    flex: 1;
+}
+.pill{
+    background-color: var(--cyan-color);
+    border: 0.12rem solid var(--black-color);
+    border-radius: 1rem;
+    padding: 0.35rem 0.8rem;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+}
+.pill.small{
+    font-size: 0.8rem;
+}
+.pill-title{
+    color: var(--navy-color);
+    margin-bottom: 0.4rem;
+    font-size: 1rem;
+}
+.class-box{
+    width: 12rem;
+    background-color: var(--blue-color);
+    border: 0.15rem solid var(--black-color);
+    border-radius: 1rem;
+    padding: 0.8rem;
+    text-align: center;
+}
+.class-box p{
+    color: var(--white-color);
+}
+.class-title{
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.class-imgs{
+    display: flex;
+    gap: 0.4rem;
+    justify-content: center;
+}
+.class-imgs img{
+    width: 3.2rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    border: 0.12rem solid var(--black-color);
+    background-color: var(--white-color);
+    object-fit: contain;
+    object-position: bottom center;
+    padding: 0.15rem;
+}
+
+
+.team-cell{
+    background-color: var(--white-color);
+}
+.team-grid{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
+}
+.poke{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.poke img{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 0.15rem solid var(--black-color);
+    background-color: var(--cyan-color);
+    object-fit: contain;
+    padding: 0.5rem;
+}
+.mini-ball{
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    border: 0.15rem solid var(--black-color);
+    background: linear-gradient(to bottom, var(--red-color) 0 45%, var(--black-color) 45% 55%, var(--white-color) 55% 100%);
+}
+
+
+.hobby-list{
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    display: grid;
+    gap: 0.25rem;
+}
+
+
+.foot-row th{
+    border-radius: 0.8rem;
+    text-align: center;
+}
+.foot-link{
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1rem;
+}
+.foot-link:hover{
+    text-decoration: underline;
+}
+
+audio{
+    width: 100%;
+    margin-top: 0.5rem;
+
+}
